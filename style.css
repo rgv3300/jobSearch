@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(180, 52%, 96%);
+}
+
+svg {
+    background-color: hsl(180, 29%, 50%);
+}
+
+#jobInterest {
+    border: none;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.7);
+    width: %;
+    height: 50px;
+}
