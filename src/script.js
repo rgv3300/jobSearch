@@ -31,7 +31,7 @@ const displayJobs = (jobs) => {
                 <h1>${job.company}</h1>
                 <h2>${job.position}</h2>
                 <p>${job.postedAt} \n.  ${job.contract} \n.  ${job.location}</p>
-                <span class="languages">${job.languages.join(" ")} &nbsp ${job.tools.join(" ")}</span>
+                <span class="languages">${job.languages.join(" ")} ${job.tools.join(" ")}</span>
             </div>
             `;
         })

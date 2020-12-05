@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EACD,gBAAgB,ECHD,OAAkB;ECAjC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,cAAc,EFCO,MAAM;CAC9B;;AAED,AAAA,WAAW,CAAC;EACR,gBAAgB,ECTJ,OAAkB;CDUjC;;AAED,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,SAAS,CAAC;EGlBN,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,KAAK;EACvB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAE,IAAG,CAAC,kBAAkB;CHiBnD",
+    "sources": [
+        "style.scss",
+        "_variables.scss",
+        "_center-div.scss",
+        "_job-card.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

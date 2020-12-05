@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'center-div';
+@import 'job-card';
+body {
+    background-color: $background-color;
+    @include flex-center(column);
+}
+
+.header-img {
+    background-color: $primary-color;
+}
+
+.icon-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+.job-card {
+    @include job-card;
+}
