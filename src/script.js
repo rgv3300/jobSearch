@@ -30,8 +30,8 @@ const displayJobs = (jobs) => {
                 <img class ="icon-img"src=${job.logo} alt="">
                 <div class = "job-company">${job.company}</div>
                 <div class = "job-position">${job.position}</div>
-                <div class = "job-details">${job.postedAt}${job.contract}${job.location}</div>
-                <div class= "job-languages">${job.languages.join(" ")} ${job.tools.join(" ")}</div>
+                <div class = "job-details">${job.postedAt} . ${job.contract} . ${job.location}</div>
+                <div class= "job-languages"><span>${job.languages.join(" ")}</span><span>${job.tools.join(" ")}</span></div>
             </div>
             `;
         })

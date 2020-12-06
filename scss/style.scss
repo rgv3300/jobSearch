@@ -2,10 +2,16 @@ $padding-elements: 10px;
 @import 'variables';
 @import 'center-div';
 @import 'job-card';
+@import 'job-search';
 body {
     background-color: $background-color;
     @include flex-center(column);
     font-family: $font-family;
+}
+
+.input-text {
+    text-align: center;
+    margin-top: -20px;
 }
 
 .header-img {
@@ -44,4 +50,9 @@ body {
 
 .job-languages {
     grid-area: lang;
+}
+
+#jobInterest {
+    position: relative;
+    border-radius: 3px;
 }
