@@ -1,6 +1,16 @@
 @mixin job-card {
-    margin: 10px;
+    margin: 20px;
+    padding: 10px;
     border-radius: 2px;
     background-color: white;
     box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+
+@mixin grid-job-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "icon job ." "icon title lang" "icon details .";
 }

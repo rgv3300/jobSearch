@@ -28,10 +28,10 @@ const displayJobs = (jobs) => {
             return `
             <div class="job-card">
                 <img class ="icon-img"src=${job.logo} alt="">
-                <h1>${job.company}</h1>
-                <h2>${job.position}</h2>
-                <p>${job.postedAt} \n.  ${job.contract} \n.  ${job.location}</p>
-                <span class="languages">${job.languages.join(" ")} ${job.tools.join(" ")}</span>
+                <div class = "job-company">${job.company}</div>
+                <div class = "job-position">${job.position}</div>
+                <div class = "job-details">${job.postedAt}${job.contract}${job.location}</div>
+                <div class= "job-languages">${job.languages.join(" ")} ${job.tools.join(" ")}</div>
             </div>
             `;
         })

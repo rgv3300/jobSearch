@@ -13,24 +13,80 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Spartan";
 }
 
 .header-img {
   background-color: #5ba4a4;
+  width: 100%;
 }
 
 .icon-img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  float: left;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: icon;
 }
 
 .job-card {
-  margin: 10px;
+  margin: 20px;
+  padding: 10px;
   border-radius: 2px;
   background-color: white;
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "icon job ." "icon title lang" "icon details .";
+}
+
+.jobContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+}
+
+.job-company {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: job;
+}
+
+.job-position {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+.job-details {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: details;
+}
+
+.job-languages {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: lang;
 }
 /*# sourceMappingURL=style.css.map */

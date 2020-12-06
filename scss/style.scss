@@ -1,22 +1,47 @@
+$padding-elements: 10px;
 @import 'variables';
 @import 'center-div';
 @import 'job-card';
 body {
     background-color: $background-color;
     @include flex-center(column);
+    font-family: $font-family;
 }
 
 .header-img {
     background-color: $primary-color;
+    width: 100%;
 }
 
 .icon-img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    float: left;
+    grid-area: icon;
 }
 
 .job-card {
     @include job-card;
+    @include grid-job-card;
+}
+
+.jobContainer {
+    @include flex-center(column);
+    width: auto;
+}
+
+.job-company {
+    grid-area: job;
+}
+
+.job-position {
+    grid-area: title;
+}
+
+.job-details {
+    grid-area: details;
+}
+
+.job-languages {
+    grid-area: lang;
 }
